@@ -50,10 +50,10 @@ public class ConfirmWeChat extends ActionSupport{
         if (codedString.equals(signature)) 
         { 
         	//将加密的结果与请求参数中的signature比对，如果相同，原样返回echostr参数内容
-        	PrintWriter out = response.getWriter();
+            PrintWriter out = response.getWriter();
             out.print(echostring);
             out.flush();
-            out.close();
+            out.close();           
         }
         
         return null;
