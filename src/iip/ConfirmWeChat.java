@@ -18,8 +18,8 @@ public class ConfirmWeChat extends ActionSupport{
 	 */
     private static final long serialVersionUID = 1L;
 
-    @Override
-    public String execute() throws Exception {
+    
+    public String confirm() throws Exception {
         
         //获取请求和响应
         HttpServletRequest request = ServletActionContext.getRequest();
