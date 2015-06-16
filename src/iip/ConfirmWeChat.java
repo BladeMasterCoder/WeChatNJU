@@ -16,9 +16,9 @@ public class ConfirmWeChat extends ActionSupport{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	@Override
+    @Override
     public String execute() throws Exception {
         
         //获取请求和响应
@@ -49,7 +49,7 @@ public class ConfirmWeChat extends ActionSupport{
         
         if (codedString.equals(signature)) 
         { 
-        	//将加密的结果与请求参数中的signature比对，如果相同，原样返回echostr参数内容
+            //将加密的结果与请求参数中的signature比对，如果相同，原样返回echostr参数内容
             PrintWriter out = response.getWriter();
             out.print(echostring);
             out.flush();
