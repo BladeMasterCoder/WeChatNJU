@@ -4,7 +4,7 @@ import java.security.MessageDigest;
 
 public final class WeixinMessageDigestUtil {
 	
-	private static final WeixinMessageDigestUtil _instance = new WeixinMessageDigestUtil();
+    private static final WeixinMessageDigestUtil _instance = new WeixinMessageDigestUtil();
 	 
     private MessageDigest alga;
      
